@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 LOGS_DIR=/var/log/shell-script
-LOGS_FILE="$LOGS_DIR/$0.log"
+LOGS_FILE="$LOGS_DIR/$0.log" # /home/ec2-user/shell-logs/10-logs.sh.log
 TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
 # Check root access or not
