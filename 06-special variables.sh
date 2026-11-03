@@ -9,3 +9,4 @@ echo "which directory: $PWD"
 echo "home directory: $HOME"
 echo "PID of script: $$"
 sleep 5 &
+echo "pid of background cmd running: $!"
