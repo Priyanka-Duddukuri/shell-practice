@@ -6,3 +6,6 @@ echo "first variable: $2"
 echo "script name: $0"
 echo "who is runnning script: $USER"
 echo "which directory: $PWD"
+echo "home directory: $HOME"
+echo "PID of script: $$"
+sleep 5 &
