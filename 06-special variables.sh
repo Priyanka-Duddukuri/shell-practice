@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "akk varuabkes passed to script: &@"
+echo "all variables passed to script: $@"
