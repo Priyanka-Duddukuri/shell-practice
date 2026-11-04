@@ -6,3 +6,5 @@ SUM=$(($NUM1+$NUM2))
 
 echo "total sum: = $SUM"
 
+MOVIES=("RRR" "varanasi" "pushpa")
+echo "Movies are: ${MOVIES[@]}"
