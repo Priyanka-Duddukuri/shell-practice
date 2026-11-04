@@ -1,6 +1,6 @@
 #!/bib/bash
 NUM1=10
-NUM2=linux
+NUM2=20
 
 SUM=$(($NUM1+$NUM2))
 
