@@ -7,5 +7,14 @@ if [ $USERID -ne 0 ]; then
 fi
 
 echo "Installing MySql"
-dnf install mysqlggdtg -y
+dnf install mysql -y
+
+if [ $? -ne 0 ]; then
+    echo "Insatlling mysql is failed"
+    exit 1
+else
+    echo "Installing mysql is success"
+fi
+
+
 
