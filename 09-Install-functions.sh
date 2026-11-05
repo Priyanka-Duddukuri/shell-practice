@@ -6,4 +6,6 @@ if [ $USERID -ne 0 ]; then
  exit
 fi
 
-echo "I am continuing"
+echo "Installing MySql"
+dnf install mysqlggdtg -y
+
