@@ -22,7 +22,7 @@ if [ $? -eq 0 ]; then
     echo "mysql is already installed" 
  else
     echo "Installing MySql"
-    dnf install mysql -y
+    dnf install nginx -y
     VALIDATE mysql $?
 
 fi
