@@ -6,20 +6,25 @@ if [ $USERID -ne 0 ]; then
  exit
 fi
 
+VALIDATE (){
+     if [ $? -ne 0 ]; then
+        echo "Insatlling mysql is failed"
+        exit 1
+     else
+        echo "Installing mysql is success"
+    fi
+
+}
+
 dnf list installed mysql
 
 if [ $? -eq 0 ]; then
-    echo "mysql is already installed"
-    else
+    echo "mysql is already installed" 
+ else
     echo "Installing MySql"
     dnf install mysql -y
+    VALIDATE mysql $?
 
-    if [ $? -ne 0 ]; then
-        echo "Insatlling mysql is failed"
-        exit 1
-        else
-        echo "Installing mysql is success"
-    fi
 fi
 
 
