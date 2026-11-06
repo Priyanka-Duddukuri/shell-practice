@@ -16,10 +16,10 @@ fi
 # second arg -> exit code
 VALIDATE(){
     if [ $2 -ne 0 ]; then
-       echo "installing $2 is failed"
+       echo "installing $1 is failed"
        exit 1
     else
-        echo "installing $2 is success"
+        echo "installing $1 is success"
     fi
 }
 
