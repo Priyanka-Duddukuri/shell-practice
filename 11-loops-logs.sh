@@ -16,10 +16,10 @@ fi
 # second arg -> exit code
 VALIDATE(){
     if [ $2 -ne 0 ]; then
-       echo $TIMESTAMP "installing $1 is failed"
+       echo "$TIMESTAMP [Error] installing $1 is failed"
        exit 1
     else
-        echo $TIMESTAMP "installing $1 is success"
+        echo "$TIMESTAMP [Info] installing $1 is success"
     fi
 }
 
