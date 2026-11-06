@@ -26,13 +26,14 @@ VALIDATE(){
 
 for package in $@
 do
-    echo "Installing $package"
-    dnf list installed $package 
+    echo "$TIMESTAMP [INFO] Installing $package"
+    dnf list installed $package
     if [ $? -ne 0 ]; then
         dnf install $package -y &>> $LOGS_FILE
         VALIDATE "Installing $package" $?
     else
-        echo $package already installed ... SKIPPING"
+        echo "$package already installed ... SKIPPING"
     fi
-
 done
+
+
