@@ -1,0 +1,15 @@
+#!/bin/bash
+ 
+ SOURCE_DIR=$1
+ DAYS=${2:-14} #DEFAULT IS 14 DAYS
+
+if [ -z "$SOURCE_DIR" ]; then
+    echo "ERROR: Missing Parameters"
+    echo "Usage: $0 <souce Dir> [days(optional defualt to 14)]"
+    exit 1
+fi
+
+if [! -d $SOURCE_DIR ]; then
+    echo "ERROR: Directory: $SOURCE_DIR does not exist"
+    exit 1
+fi
